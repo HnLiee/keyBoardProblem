@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="74f-wB-k0j" customClass="keyBoardTool">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem title="上一项" id="phX-aG-uXX">
+                    <connections>
+                        <action selector="previous:" destination="74f-wB-k0j" id="I9J-vF-qQq"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="下一项" id="lSQ-uN-jNd">
+                    <connections>
+                        <action selector="next:" destination="74f-wB-k0j" id="0HT-Sb-OyD"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="2Tp-Cu-W4c"/>
+                <barButtonItem title="完成" id="t9q-NF-pwg">
+                    <connections>
+                        <action selector="done:" destination="74f-wB-k0j" id="tSa-gD-YMw"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="fieldNext" destination="lSQ-uN-jNd" id="0eN-NU-MLS"/>
+                <outlet property="previous" destination="phX-aG-uXX" id="pjW-wV-ScF"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="282"/>
+        </toolbar>
+    </objects>
+</document>
